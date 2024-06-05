@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Logowania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nazwa Twojej Strony</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-form">
+            <h2>Zaloguj się</h2>
+            <form action="/login" method="post">
+                <label for="username">Nazwa użytkownika:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Zaloguj się</button>
+                
+                <div class="options">
+                    <a href="#">Nie pamiętasz hasła?</a>
+                    <a href="#">Zarejestruj się</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 Nazwa Twojej Strony</p>
+    </footer>
+</body>
+</html>
