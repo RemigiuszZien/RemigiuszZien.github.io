@@ -120,3 +120,83 @@ th, td {
     padding: 10px;
     text-align: left;
 }
+
+/* New styles for login form */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login-form .options a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-form .options a:hover {
+    color: #555;
+}
+
+/* New styles for reservation summary */
+.reservation-summary {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-summary h3 {
+    margin-bottom: 10px;
+}
+
+/* New styles for admin events */
+.admin-events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-events ul li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-events ul li p {
+    margin: 0;
+}
+
+.admin-events ul li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-events ul li button:hover {
+    background-color: #555;
+}
