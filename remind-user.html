@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otrzymaj przypomnienie</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Otrzymaj przypomnienie</h1>
+		<a href="employee-panel.html" class="button back-button" aria-label="Wróć">Wstecz</a>
+        <form>
+            <label for="user">Wybierz użytkownika:</label>
+            <select id="user" name="user" required aria-required="true">
+                <option value="user1">Użytkownik 1</option>
+                <option value="user2">Użytkownik 2</option>
+                <option value="user3">Użytkownik 3</option>
+            </select>
+            <label for="message">Wiadomość przypomnienia:</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+</body>
+</html>
