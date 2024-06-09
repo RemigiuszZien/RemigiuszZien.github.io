@@ -20,17 +20,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 h1 {
     margin-bottom: 20px;
 }
 
-form, .button-container, .selection-container {
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -38,7 +39,7 @@ label {
     text-align: left;
 }
 
-input, select, textarea {
+input, select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -60,48 +61,39 @@ button:hover, .button:hover {
     background-color: #0056b3;
 }
 
-.selection-container {
-    display: flex;
-    justify-content: space-between;
+.results {
+    margin-top: 20px;
 }
 
-.selection {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    flex: 1;
-    margin: 0 10px;
+.results h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
     text-align: center;
 }
 
-.hidden {
-    display: none;
+th {
+    background-color: #007BFF;
+    color: white;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+td {
     background-color: #e9ecef;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .back-button {
+    display: inline-block;
     margin-bottom: 20px;
-	display: inline-block;
-}
-
-.container p {
-    color: #FF0000; 
-    font-weight: bold; 
-    margin-bottom: 20px; 
 }

@@ -4,17 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezerwuj pole</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/c3.css">
 </head>
 <body>
     <div class="container">
         <h1>Rezerwuj pole</h1>
-		 <a href="user-panel.html" class="button back-button" aria-label="Wróć">Wstecz</a>
-        <form>
+        <a href="user-panel.html" class="button back-button" aria-label="Wróć">Wstecz</a>
+        <form id="reservation-form">
             <label for="date">Wybierz datę:</label>
             <input type="date" id="date" name="date" required aria-required="true">
+
+            <label for="start-time">Czas rozpoczęcia:</label>
+            <input type="time" id="start-time" name="start-time" required aria-required="true">
+
+            <label for="end-time">Czas zakończenia:</label>
+            <input type="time" id="end-time" name="end-time" required aria-required="true">
+
+            <label for="participants">Liczba uczestników:</label>
+            <input type="number" id="participants" name="participants" value="4" min="1" required aria-required="true">
+
+            <label for="field">Pole:</label>
+            <input type="number" id="field" name="field" value="1" min="1" required aria-required="true">
+
             <button type="submit">Zarezerwuj</button>
         </form>
+
+        <div id="summary">
+            <h2>Podsumowanie:</h2>
+            <p>Data: <span id="summary-date"></span></p>
+            <p>Czas rozpoczęcia: <span id="summary-start-time"></span></p>
+            <p>Czas zakończenia: <span id="summary-end-time"></span></p>
+            <p>Liczba uczestników: <span id="summary-participants"></span></p>
+            <p>Pole: <span id="summary-field"></span></p>
+            <p>Cena: <span id="summary-price"></span> zł</p>
+        </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

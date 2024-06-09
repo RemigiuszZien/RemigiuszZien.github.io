@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przeglądaj dostępność</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/c.css">
 </head>
 <body>
     <div class="container">
-        <h1>Przeglądaj dostępność</h1>
-		 <a href="user-panel.html" class="button back-button" aria-label="Wróć">Wstecz</a>
-        <ul aria-label="Lista dostępności">
-            <li>Data 1 - Wolne</li>
-            <li>Data 2 - Zajęte</li>
-            <li>Data 3 - Wolne</li>
-        </ul>
+        <h1>Przeglądaj dostępność rezerwacji</h1>
+        <form>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date">
+            <label for="field">Pole:</label>
+            <select id="field" name="field">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button type="button" class="button">Sprawdź dostępność</button>
+        </form>
+        <div class="results">
+            <h2>Wyniki:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Czas</th>
+                        <th>Dostępność</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+        <a href="user-panel.html" class="button back-button">Wstecz</a>
     </div>
 </body>
 </html>

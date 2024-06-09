@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zarządzaj wydarzeniami</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/c2.css">
 </head>
 <body>
     <div class="container">
         <h1>Zarządzaj wydarzeniami</h1>
-		<a href="employee-panel.html" class="button back-button" aria-label="Wróć">Wstecz</a>
-        <ul aria-label="Lista wydarzeń">
-            <li>Wydarzenie 1 <button class="button" aria-label="Edytuj wydarzenie 1">Edytuj</button> <button class="button" aria-label="Usuń wydarzenie 1">Usuń</button></li>
-            <li>Wydarzenie 2 <button class="button" aria-label="Edytuj wydarzenie 2">Edytuj</button> <button class="button" aria-label="Usuń wydarzenie 2">Usuń</button></li>
-            <li>Wydarzenie 3 <button class="button" aria-label="Edytuj wydarzenie 3">Edytuj</button> <button class="button" aria-label="Usuń wydarzenie 3">Usuń</button></li>
-        </ul>
+        <button class="button add-event-button">Dodaj wydarzenie</button>
+        <div class="event-list">
+            <div class="event" onclick="selectEvent(this)">
+                <h2>Wydarzenie 1</h2>
+                <p>Godzina: 10:00 - 12:00<br>Dzień: 15/06/2024</p>
+            </div>
+            <div class="event" onclick="selectEvent(this)">
+                <h2>Wydarzenie 2</h2>
+                <p>Godzina: 14:00 - 16:00<br>Dzień: 16/06/2024</p>
+            </div>
+            <div class="event" onclick="selectEvent(this)">
+                <h2>Wydarzenie 3</h2>
+                <p>Godzina: 09:00 - 11:00<br>Dzień: 17/06/2024</p>
+            </div>
+        </div>
+        <div class="options">
+            <button class="button edit-button" onclick="editEvent()">Edytuj</button>
+            <button class="button delete-button" onclick="deleteEvent()">Usuń</button>
+        </div>
+        <a href="employee-panel.html" class="button back-button">Wstecz</a>
     </div>
+    <script>
+        let selectedEvent = null;
+
+        function selectEvent(eventElement) {
+            const events = document.querySelectorAll('.event');
+            events.forEach(event => event.classList.remove('selected'));
+
+            eventElement.classList.add('selected');
+            selectedEvent = eventElement;
+        }
+
+        function editEvent() {
+            if (selectedEvent) {
+                alert('Edytowanie: ' + selectedEvent.querySelector('h2').innerText);
+                // Tutaj możesz dodać logikę do edytowania wydarzenia
+            } else {
+                alert('Proszę wybrać wydarzenie do edytowania.');
+            }
+        }
+
+        function deleteEvent() {
+            if (selectedEvent) {
+                if (confirm('Czy na pewno chcesz usunąć: ' + selectedEvent.querySelector('h2').innerText + '?')) {
+                    selectedEvent.remove();
+                    selectedEvent = null;
+                }
+            } else {
+                alert('Proszę wybrać wydarzenie do usunięcia.');
+            }
+        }
+    </script>
 </body>
 </html>

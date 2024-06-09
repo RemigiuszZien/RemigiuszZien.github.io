@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.add-event-button {
+    margin-bottom: 20px;
+}
+
+.event-list {
+    margin-bottom: 20px;
+}
+
+.event {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.event.selected {
+    border: 2px solid #007BFF;
+}
+
+.event h2 {
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button, .button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.edit-button {
+    background-color: #28a745;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

@@ -97,11 +97,16 @@ ul li {
 
 .back-button {
     margin-bottom: 20px;
-	display: inline-block;
+    display: inline-block;
 }
 
 .container p {
     color: #FF0000; 
     font-weight: bold; 
     margin-bottom: 20px; 
+}
+
+#summary {
+    margin-top: 20px;
+    text-align: left;
 }
